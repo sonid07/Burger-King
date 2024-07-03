@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            /* background-color: #F8F6F3; */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-family: "Kanit", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+
+        }
+
+        /* =====================================head============================== */
+        .head {
+            height: 100px;
+            width: 100%;
+            /* background-color: red; */
+        }
+
+        .logo {
+            height: inherit;
+            width: 40%;
+            /* background-color: aqua; */
+            float: left;
+        }
+
+        .logo .img {
+            height: inherit;
+            width: 40%;
+            /* background-color: chocolate; */
+            float: left;
+            padding-left: 65px;
+            padding-top: 10px;
+        }
+
+        .logo .con {
+            height: inherit;
+            width: 60%;
+            /* background-color: blueviolet; */
+            float: right;
+            padding-top: 15px;
+        }
+
+        .head .logo .con label {
+            padding-top: 50px;
+            font-size: 25px;
+        }
+
+        .head .logo .con input {
+            /* padding-top: 50px; */
+            height: 25px;
+            width: 25px;
+        }
+
+        .head .logo .con span {
+            padding-bottom: 30px;
+            font-size: 25px;
+        }
+
+        .det {
+            height: inherit;
+            width: 60%;
+            /* background-color: blue; */
+            float: right;
+        }
+
+        .head .det .loc input {
+            height: 40px;
+            width: 80%;
+            border-radius: 10px;
+
+        }
+
+        .loc {
+            height: inherit;
+            width: 25%;
+            /* background-color: green; */
+            float: left;
+            margin-top: 20px;
+        }
+
+        .cart {
+            height: inherit;
+            width: 75%;
+            /* background-color: chartreuse; */
+            float: right;
+        }
+
+        .head .det .cart img {
+            height: 30px;
+            width: 30px;
+            margin-top: 35px;
+            margin-left: 5px;
+        }
+
+        .head .det .cart span {
+            font-size: 20px;
+        }
+        
+        #a1 {
+            padding-right: 30px;
+        }
+
+        #b1 {
+            padding-right: 30px;
+        }
+
+        #c1 {
+            padding-right: 30px;
+        }
+
+        #io {
+
+            padding-left: 20px;
+            height: 30px;
+            width: 50px;
+        }
+
+        /* ++++++++++++++++++++++++++++++++menu+++++++++++++++++++++++++++++++ */
+        .main {
+            height: 700px;
+            width: 100%;
+            /* background-color: rgba(255, 0, 0, 0.902); */
+        }
+
+        .main .ourmenu {
+            height: 100px;
+            width: 100%;
+            background-color: bisque;
+        }
+
+        #menu {
+            padding-top: 30px;
+            padding-left: 50px;
+            font-size: 30px;
+        }
+
+        /* +++++++++++++++++++++++++++++++++++option++++++++++++++++++++++++++++++++++++++ */
+        .main .option {
+            height: 180px;
+            width: 100%;
+            background-color: bisque;
+        }
+
+        .option div {
+            display: inline;
+            padding-left: 70px;
+            padding-top: 40px;
+        }
+
+        /* +++++++++++++++++++++++++++++++++++explore++++++++++++++++++++++++++++++++++++++ */
+
+        .main .explore {
+            height: 50px;
+            width: 100%;
+            /* background-color: darkorange; */
+        }
+
+        .main .explore .box {
+            height: 50px;
+            width: 300px;
+            background-color: darkorange;
+            border-radius: 10px;
+            /* display: inline; */
+            font-size: 25px;
+            margin-left: 43%;
+            padding-left: 30px;
+            padding-top: 5.5px;
+        }
+
+        .main .image img {
+            padding-left: 20%;
+            padding-right: 20px;
+            /* padding-right: 20%; */
+        }
+
+        /* .main .explore .box{
+            height: 300px;
+            width: 500px;
+            background-color: yellow;
+             display: inline; 
+        } */
+        /* =================================footer================================= */
+        .footer {
+            height: 300px;
+            width: 100%;
+            background-color: gray;
+        }
+
+        /* +++++++++++++++++++++++++++++++footerleft++++++++++++++++++++++++++++++++++++ */
+        .footerleft {
+            height: inherit;
+            width: 50%;
+            /* background-color: black; */
+            /* color: white; */
+            float: left;
+        }
+
+        .part1 {
+            height: inherit;
+            width: 50%;
+            /* background-color: deepskyblue; */
+            float: left;
+            padding-left: 20%;
+            padding-top: 20px;
+        }
+
+        .part2 {
+            height: inherit;
+            width: 50%;
+            /* background-color: darkslategray; */
+            float: right;
+            padding-left: 20%;
+            padding-top: 20px;
+        }
+
+        .part3 {
+            height: inherit;
+            width: 50%;
+            /* background-color: fuchsia; */
+            float: left;
+            padding-left: 20%;
+            padding-top: 20px;
+        }
+
+        .part4 {
+            height: inherit;
+            width: 50%;
+            /* background-color: midnightblue; */
+            float: right;
+            padding-left: 20%;
+            padding-top: 20px;
+        }
+
+        /* ++++++++++++++++++++++++++++++++++footerright++++++++++++++++++++++++++++++++++ */
+        .footerright {
+            height: inherit;
+            width: 50%;
+            /* background-color: crimson; */
+            float: right;
+        }
+
+        #we {
+            padding-top: 30px;
+        }
+
+        #is {
+            padding-top: 30px;
+            padding-left: 20px;
+        }
+
+        #the {
+            padding-top: 30px;
+            padding-left: 20px;
+        }
+
+        #an {
+            padding-top: 30px;
+            padding-left: 20px;
+        }
+    </style>
+
+<body>
+    <div class="head">
+        <div class="logo">
+            <div class="img">
+                <img src="c:\Users\DC\Downloads\download.png" alt="" height="90px" width="90px">
+            </div>
+            <div class="con">
+                <span>DINE-IN/AWAY</spans>
+                    <input type="checkbox">
+                    <span>DELEVEIRY</span>
+            </div>
+        </div>
+        <div class="det">
+            <div class="loc">
+                <input type="text" placeholder="Tap on it to pick your location">
+            </div>
+            <div class="cart">
+                <img src="c:\Users\DC\Downloads\dine-in-black.c32e1cdd.svg" alt="" id="k">
+                <span id="k1">NEARBY STORES</span>
+                <img src="c:\Users\DC\Downloads\offers-inactive.81dcb21f.svg" alt="" id="a">
+                <span id="a1">KING DEALS</span>
+                <img src="c:\Users\DC\Downloads\login-inactive.de941b20.svg" alt="" id="b">
+                <span id="b1">LOGIN</span>
+                <img src="c:\Users\DC\Downloads\cart.3ff203fa.svg" alt="" id="c">
+                <span id="c1">CART</span>
+                <img src="c:\Users\DC\Downloads\search.03064934.svg" alt="" id="io">
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="ourmenu">
+            <div class="text" id="menu">OUR MENU</div>
+        </div>
+        <div class="option">
+            <div class="img1">
+                <img src="c:\Users\DC\Downloads\1x_web_20220917071641152673_114x101png.jfif" alt="">
+            </div>
+            <div class="img2">
+                <img src="c:\Users\DC\Downloads\1x_web_20240521084713813756_114x101png.jfif" alt="">
+            </div>
+            <div class="img3">
+                <img src="c:\Users\DC\Downloads\1x_web_20230510052712522360_114x101png.jfif" alt="">
+            </div>
+            <div class="img4">
+                <img src="c:\Users\DC\Downloads\1x_web_20220221045917058620_114x101png.jfif" alt="">
+            </div>
+            <div class="img5">
+                <img src="c:\Users\DC\Downloads\1x_web_20210427112037534695_114x101png.jfif" alt="">
+            </div>
+            <div class="img6">
+                <img src="c:\Users\DC\Downloads\1x_web_20240410063942722493_114x101png.jfif" alt="">
+            </div>
+            <div class="img7">
+                <img src="c:\Users\DC\Downloads\1x_web_20231123085514623967_114x101png.jfif" alt="">
+            </div>
+            <div class="img8">
+                <img src="c:\Users\DC\Downloads\1x_web_20230323093839166957_114x101png.jfif" alt="">
+            </div>
+            <div class="img9">
+                <img src="c:\Users\DC\Downloads\1x_web_20240410064239001065_114x101png.jfif" alt="">
+            </div>
+        </div>
+        <div class="explore">
+            <div class="bat">
+                <div class="box">EXPLORE FULL MENU</div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="c:\Users\DC\Downloads\home-bk-wall.96e21fb4.jpg" alt="" height="290" width="1700">
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footerleft">
+            <div class="part1">
+                <h3>BK INFO</h3><br>
+                <p>About BK</p>
+                <p>Fresh Taste</p>
+                <p>Investor Relation</p>
+            </div>
+            <div class="part2">
+                <h3>CONTACT</h3><br>
+                <p>FAQ's & Support</p>
+                <p>Write to Us:</p>
+                <p>Carrers</p>
+                <p>Customer Care</p>
+                <p>Supply Chain Quaroies</p>
+                <p>Investor Relation</p>
+                <p>Franchising</p>
+            </div>
+        </div>
+        <div class="footerright">
+            <div class="part3">
+                <h3>BK CARES</h3><br>
+                <p>Nutrition Information</p>
+                <p>Creating Brighter Future</p>
+                <p>Trust & Taste</p>
+                <p>Covid-19 Saftey</p>
+            </div>
+            <div class="part4">
+                <h3>LEGAL</h3><br>
+                <p>Terms & Condition</p>
+                <p>Privacy policy</p>
+                <p>Promotional T&C</p>
+                <div class="icon">
+                    <img src="c:\Users\DC\Downloads\facebook.ff3fbd2c.svg" alt="" id="we">
+                    <img src="c:\Users\DC\Downloads\instagram.a9d8bd71.svg " alt="" id="is">
+                    <img src="c:\Users\DC\Downloads\twitter.7db1e7d8.svg" alt="" id="the">
+                    <img src="c:\Users\DC\Downloads\youtube.1ff5f219.svg" alt="" id="an">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
